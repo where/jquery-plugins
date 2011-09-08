@@ -28,7 +28,7 @@
  * `$('table.toggleColumns')`).
  * 
  * ### To-Do List
- * * Add support for rowspan (who the eff uses rowspan?).
+ * * Add support for rowspan.
  */
 
 // Immediately-executing anonymous function (closure!). `window` and
