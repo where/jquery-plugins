@@ -11,12 +11,12 @@ For further detail and instructions on how to utilize this plugin, please see th
 
 This library must be included on your page after the jquery plugin. You can include both with:
 
-````<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script src="path_to_library/jquery.wheretables.js"></script>````
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="path_to_library/jquery.wheretables.js"></script>
 
 You can initialize this library by calling `.whereTables()` on any elements you want to use it on. For example, to use this library on all tables with a class of `toggleColumns`, you would need to initialize it with:
 
-````$('table.toggleColumns').whereTables()````
+	$('table.toggleColumns').whereTables()
 
 **Note**: Don't forget to wrap that call in `jQuery.ready` (or the `$(function(){})` shorthand method).
 
@@ -30,11 +30,11 @@ There are currently three methods available:
 
 Calling these methods takes on this format:
 
-````$(element).whereTables('method-name',argument1, argument2,...,argumentN)````
+	$(element).whereTables('method-name',argument1, argument2,...,argumentN)
 
 To hide the third column (column `2` with a zero-index) on a `table` with an id of `example`, you might call:
 
-````$('#example').whereTables('hideColumn', 2)````
+	$('#example').whereTables('hideColumn', 2)
 
 ### Events
 
@@ -45,6 +45,6 @@ Each time a column is shown or hidden, an event is emitted from the element `jQu
 
 If you wanted to listen for one of these events and, say, pop up an `alert` when a column on a `table` with an id of `example` is shown, you might write the following:
 
-````$('#example').bind( 'showColumn.whereTables', function( event, index ){
-	alert( index );
-} );
+	$('#example').bind( 'showColumn.whereTables', function( event, index ){
+		alert( index );
+	} );
