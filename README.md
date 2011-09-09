@@ -20,7 +20,7 @@ You can initialize this library by calling `.whereTables()` on any elements you 
 
 **Note**: Don't forget to wrap that call in `jQuery.ready` (or the `$(function(){})` shorthand method).
 
-### Methods
+## Methods
 
 There are currently three methods available:
 
@@ -36,7 +36,7 @@ To hide the third column (column `2` with a zero-index) on a `table` with an id 
 
 	$('#example').whereTables('hideColumn', 2)
 
-### Events
+## Events
 
 Each time a column is shown or hidden, an event is emitted from the element `jQuery.whereTables` was called on. The events are:
 
