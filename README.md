@@ -1,5 +1,4 @@
 # jQuery.whereTables.js
-***
 
 ## Introduction
 
